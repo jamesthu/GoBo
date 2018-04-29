@@ -1,0 +1,8 @@
+{
+  "name": "GoBo",
+  "app_id": "4dd14838",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

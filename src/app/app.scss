@@ -14,3 +14,34 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+/*********** 背景色 start **********/
+.primary-bg {
+    .toolbar {
+        .toolbar-background {
+            background-color: color($colors, goBoRed);
+        }
+        .toolbar-title{
+            color: color($colors, light);
+        }
+    }
+    .segment-md .segment-button {
+        color: color($colors, light) !important;
+    }
+    .segment-md .segment-button.segment-activated{
+        color: color($colors, white) !important;
+        // font-weight: bold;
+        .bolder-sm{
+            border: 5px solid color($colors, light);
+            width: 20px;
+            margin: 0 auto;
+        }
+    }
+}
+/*********** 背景色 end **********/
+
+
+// .picker-md .picker-button {
+//     color: red;
+// }

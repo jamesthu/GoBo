@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="37px" viewBox="0 0 23 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="状态栏" transform="translate(-96.000000, -16.000000)">
+            <g id="location" transform="translate(77.533416, 16.611893)">
+                <path d="M33.0935529,0.500128951 C32.2972158,-2.0929065e-13 30.3935209,-2.27373675e-13 29.5626685,-2.27373675e-13 C23.7290678,-2.27373675e-13 19,4.4771525 19,10 C19,15.5228475 23.7290678,20 29.5626685,20 C35.3962692,20 40.1253369,15.5228475 40.1253369,10 C40.1253369,7.00831759 38.7376854,4.32347371 36.5384979,2.4908945 C36.2431103,2.24474845 29.5626685,10 29.5626685,10" id="Oval" stroke="#F97C7C"></path>
+                <text id="地图" font-family="PingFangSC-Regular, PingFang SC" font-size="10" font-weight="normal" fill="#F97C7C">
+                    <tspan x="19.2654723" y="35">地图</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="39px" viewBox="0 0 23 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="状态栏" transform="translate(-316.000000, -14.000000)">
+            <g id="profile" transform="translate(299.000000, 15.000000)">
+                <path d="M28.4242112,13 C32.0140621,13 34.9242112,10.0898509 34.9242112,6.5 C34.9242112,2.91014913 32.0140621,0 28.4242112,0 C24.8343603,0 21.9242112,2.91014913 21.9242112,6.5 C21.9242112,10.0898509 24.8343603,13 28.4242112,13 Z M33.6046665,12.7647059 C33.6046665,12.7647059 34.959145,14.1876212 35.6682982,14.9976404 C36.209208,15.6154862 36.7187333,16.2482256 37.0967336,16.8424624 C38.5203764,19.0805051 38.9861381,20.974739 38.9861381,20.974739 L18,20.974739 C18,20.974739 18.9160617,18.4793896 20.3594827,16.2388554 L20.3594827,16.2388554 C21.2728435,14.8211014 23.1749452,12.7647059 23.1749452,12.7647059" id="Oval-2" stroke="#F97C7C" fill="#FFFFFF"></path>
+                <text id="账号" font-family="PingFangSC-Regular, PingFang SC" font-size="10" font-weight="normal" fill="#F97C7C">
+                    <tspan x="18.7988884" y="36.611893">账号</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,17 +1,157 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+<ion-header class="primary-bg" no-border hide-nav-bar="true" style="height: 56px;">   
+  <ion-toolbar style="height: 56px;">
+    <ion-buttons left>
+      <button ion-button (click)="addTask()">
+          <img class="pic-button-add" src="assets/imgs/add-white.svg">
+      </button>
+    </ion-buttons>
+    <ion-segment mode="md" [(ngModel)]="taskType">
+      <ion-segment-button value="doing" (ionSelect)="searchByDoing(1)" style="font-size: 18px">
+        直播
+        <div class="bolder-sm"></div>
+      </ion-segment-button>
+      <ion-segment-button value="waiting" (ionSelect)="searchByWaiting(1)" style="font-size: 18px">
+        任务  
+        <div class="bolder-sm"></div>
+      </ion-segment-button>
+      <ion-segment-button value="todo" (ionSelect)="searchByToDo(1)" style="font-size: 18px">
+        预告
+        <div class="bolder-sm"></div>
+      </ion-segment-button>
+    </ion-segment>
+    <ion-buttons right>
+      <button ion-button>
+        <img class="pic-button-email" src="assets/imgs/email.svg">
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content no-padding>
+  <div [ngSwitch]="taskType">
+    <div *ngSwitchCase="'doing'">
+      <div *ngFor="let task of tasksDoing">
+        <ion-grid style="background-size:contain; height: 283px;" [style.background-image]="'url(' + task.taskBackImg + ')'" no-padding (click)="playVideo(task.taskOrder)">
+          <ion-row no-padding style="height: 239px"></ion-row>
+          <ion-row no-padding style="height: 44px; padding-left: 16px; padding-right: 16px;">
+            <ion-col col-1 style="text-align: right; padding-top:8px; padding-bottom: 8px;">
+              <ion-avatar>
+                <img style="border-radius: 30px;" src={{task.showAvatar}}>
+              </ion-avatar>
+              </ion-col>
+            <ion-col col-11 style="font-size:14px; color:white; text-align: left; padding-top: 13px; padding-left: 5px;">{{task.taskRecipient.name}}|{{task.taskRecipient.title}}</ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid style="background: white; height: 50px;">
+          <ion-row no-padding style="width: 100%; height: 100%; padding-left: 10px;">
+            <ion-col col-8 style="font-size: 18px; color: #4a4a4a;" class="pl">
+              {{task.taskName}}
+            </ion-col>
+            <ion-col col-1  (click)="tip(task.taskOrder, taskType)" style="padding-right:5px; text-align: right">
+              <img src="assets/imgs/money.svg" style="padding-top: 3px;">
+            </ion-col>
+            <ion-col col-1 no-padding style="padding-top: 10px; padding-left: 5px; text-align: left;">
+              {{task.taskMoneyNum}}
+            </ion-col>
+            <ion-col col-1  (click)="favor(task.taskOrder, taskType)" style="padding-right: 5px; text-align: right" >
+              <img *ngIf="task.hasFavor" src="assets/imgs/like-red.svg" style="padding-top: 5px;">
+              <img *ngIf="!task.hasFavor" src="assets/imgs/like.svg" style="padding-top: 5px;">
+            </ion-col>
+            <ion-col col-1 no-padding style="padding-top: 10px; padding-left: 5px; text-align: left">
+              {{task.taskLikeNum}}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>      
+    </div>
+    <div *ngSwitchCase="'todo'" padding>
+      <button ion-button block color="outline" outline style="font-size: 15px; height: 44px; color: #4a4a4a;" (click)="addTrailer()">
+        <img class="pic-button-add" style="margin-right: 10px;" src="assets/imgs/add-black.svg">
+          我有直播要预告
+      </button>
+      <div style="height: 10px; background-color:#fff;"></div>
+      <div *ngFor="let task of tasksToDo">
+        <ion-grid style="height: 163px;" no-padding>
+          <ion-row no-padding style="height: 100%; width: 100%;" (click)="detailTrailer(task.taskOrder)">
+            <ion-col col-8 style="background-size:contain; font-size: 15px; color: white;" [style.background-image]="'url(' + task.taskBackImg + ')'">
+              <ion-row no-padding style="height:20px; width: 100%;">
+                <ion-col col-2 text-center no-padding *ngIf="task.taskSelfClaim || task.taskSelfInit" style="height: 100%; font-size: 10px; background: #F39292; color:white; vertical-align: center">
+                  任务
+                </ion-col>
+                <ion-col col-10></ion-col>
+              </ion-row>
+              <ion-row style="height: 143px; width: 100%;">
+                <ion-col text-center align-self-end style="color: white;">
+                  {{task.taskName}}
+                </ion-col>
+              </ion-row>
+              <ion-row style="height: 5px; width: 100%">
+              </ion-row>
+            </ion-col>
+            <ion-col col-4 style="background: white; border:1px solid #f5f5f5;">
+              <ion-row style="width: 100%; text-align: center; height: 46px; padding-top: 8px; padding-bottom: 5px;">
+                  <img style="border-radius: 30px; margin: 0 auto; height: 36px;" src={{task.showAvatar}}>
+              </ion-row>
+              <ion-row style="font-size: 12px; width: 100%;" no-padding>
+                <ion-col text-center>
+                  {{task.taskRecipient.name}}
+                </ion-col>
+              </ion-row>
+              <ion-row no-padding>
+                <ion-col text-center style="font-size: 13px; color: #F97C7C;">
+                  距直播  {{task.taskLeftTime.displayTime}}
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-2></ion-col>
+                <ion-col col-8 style="height: 28px;">
+                  <button *ngIf="!task.taskSelfClaim && !task.trailerClaim" ion-button outline block color="outline" style="height: 28px; color: #4a4a4a; font-size: 14px;" >开播提醒</button>
+                  <button *ngIf="!task.taskSelfClaim && task.trailerClaim" ion-button outline block color="outline" style="height: 28px; color: #4a4a4a; font-size: 14px;" >取消提醒</button>
+                  <button *ngIf="task.taskSelfClaim" ion-button outline block color="outline" style="height: 28px; color: #4a4a4a; font-size: 14px;" >删除预告</button>
+                </ion-col>
+                <ion-col col-2></ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div style="height: 10px; background-color:#fff;"></div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'waiting'" padding>
+      <button ion-button block color="outline" outline style="font-size: 15px; height: 44px; color: #4a4a4a" (click)="addTask()">
+        <img class="pic-button-add" style="margin-right: 10px;" src="assets/imgs/add-black.svg">
+        发布任务
+      </button>
+      <div style="height: 10px; background-color:#fff;"></div>
+      <div *ngFor="let task of tasksWaiting" class="item">
+        <div style="height:150px; width: 100%; padding-left: 10%; padding-right: 10%; display: table" (click)="detailTask(task.taskOrder)">
+          <div style="font-size: 20px; text-align: center; vertical-align: middle; display:table-cell; color:white;">
+            {{task.taskName}}
+          </div>
+        </div>
+        <ion-grid style="height: 50px; border:1px solid #f5f5f5; background-color:#fff;">
+          <ion-row no-padding style="width: 100%; height: 100%;">
+            <ion-col col-2  (click)="favor(task.taskOrder, taskType)" style="padding-right: 5px; text-align: right" >
+              <img *ngIf="task.hasFavor" src="assets/imgs/like-red.svg" style="padding-top: 5px;">
+              <img *ngIf="!task.hasFavor" src="assets/imgs/like.svg" style="padding-top: 5px;">
+            </ion-col>
+            <ion-col col-2 style="padding-top: 10px; padding-left: 5px; text-align: left">
+              {{task.taskLikeNum}}
+            </ion-col>
+            <ion-col col-2  (click)="tip(task.taskOrder, taskType)" style="padding-right:5px; text-align: right">
+              <img src="assets/imgs/money.svg" style="padding-top: 3px;">
+            </ion-col>
+            <ion-col col-2 style="padding-top: 10px; padding-left: 5px; text-align: left;">
+              {{task.taskMoneyNum}}
+            </ion-col>
+            <ion-col col-4 no-padding text-center>
+              <button *ngIf="!task.taskSelfInit" ion-button outline block color="outline" style="width: fit-content; height:80%; font-size: 14px; color: #4a4a4a; display: inline-block;" (click)="detailTask(task.taskOrder)">领取任务</button>
+              <button *ngIf="task.taskSelfInit" ion-button outline block color="outline" style="width: fit-content; height:80%; font-size: 14px; color: #4a4a4a; display: inline-block;" (click)="detailTask(task.taskOrder)">删除任务</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div style="height: 10px; background-color:#fff;"></div>
+      </div>
+    </div>
+  </div>
 </ion-content>

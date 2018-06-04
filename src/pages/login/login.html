@@ -1,0 +1,40 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding style="background: #f5f5f5; height: 200%;">
+    <ion-grid style="height: 100%;">
+      <ion-row style="height: 130px; width: 100%;"></ion-row>
+      <ion-row style="height: 141px; width: 100%;">
+        <ion-col col-12 no-padding style="text-align:center">
+          <img src="assets/imgs/login.jpg">
+        </ion-col>
+      </ion-row>
+      <ion-row style="height: 15px; width: 100%;"></ion-row>
+      <ion-row center padding style="width: 100%">
+        <ion-col col-12 no-padding>
+          <ion-input [(ngModel)]="loginId" placeholder="学号" rows="1" style="height: 40px; font-size: 16px; color: #9B9B9B;"> </ion-input>
+          <div style="background: #9B9B9B; height: 1px;"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row center padding style="width: 100%">
+        <ion-col col-12 no-padding>
+          <ion-input [(ngModel)]="loginPwd" placeholder="密码" type="password" rows="1" style="height: 40px; font-size: 16px; color: #9B9B9B;"> </ion-input>
+          <div style="background: #9B9B9B; height: 1px;"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row padding>
+        <ion-col no-padding col-12>
+          <div *ngIf="succeed" style="height: 12px;"></div>
+          <div *ngIf="!succeed" style="font-size:12px; text-align: center; color: red;">请正确输入清华Info账号名与密码</div>
+          <button ion-button block mode="ios" color="goBoRed" style="font-size: 18px; color:white; height: 44px;" (click)="login()">
+            登录
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  

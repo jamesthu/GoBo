@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="38px" viewBox="0 0 24 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Index</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="底部状态栏" transform="translate(-32.000000, -15.000000)">
+            <g id="状态栏">
+                <g id="Index" transform="translate(15.366577, 15.611893)">
+                    <text id="首页" font-family="PingFangSC-Light, PingFang SC" font-size="10" font-weight="300" fill="#979797">
+                        <tspan x="18.4323116" y="36">首页</tspan>
+                    </text>
+                    <path d="M19.6334232,9.38810702 L19.6334232,19.388107 L19.6334232,19.388107 C19.6334232,21.0449613 20.9765689,22.388107 22.6334232,22.388107 L26.4937108,22.388107 L26.4937108,14.1153797 L31.0145503,14.1153797 L31.0145503,22.388107 L34.6334232,22.388107 L34.6334232,22.388107 C36.2902774,22.388107 37.6334232,21.0449613 37.6334232,19.388107 C37.6334232,16.0547737 37.6334232,12.7214404 37.6334232,9.38810702" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                    <path d="M16.6334232,9.26420633 L26.2216775,1.1997128 C27.5010789,0.123633244 29.561005,0.111527208 30.8547998,1.1997128 L40.6334232,9.5071489" id="Triangle" stroke="#979797" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

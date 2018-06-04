@@ -1,0 +1,79 @@
+<!--
+  Generated template for the AddTrailer page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="goBoRed">
+    <ion-title style="font-size: 20px; text-align: center">发布预告</ion-title>
+    <ion-buttons end>
+      <button ion-button color="goBoRed" (click)="onMessage()">
+        <img class="pic-button-email" src="assets/imgs/email.svg">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style=" background: #f5f5f5">
+    <ion-grid padding style="height: 670px;">
+      <ion-row center style="height: 44px; font-size: 14px;">
+        <ion-col col-12 style="color: #4A4A4A; text-align: left;">直播主题(必填)</ion-col>
+      </ion-row>
+      <ion-row no-padding style="height: 44px; font-size: 16px;">
+        <ion-col col-12 no-padding style="background:white; border: 1px, solid, #9B9B9B; border-radius: 5px; padding-left: 8px;">
+          <ion-input [(ngModel)]="task.taskName" rows="1" style="height: 44px;"> </ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row center style="height: 44px; font-size: 14px;">
+        <ion-col col-3 style="color: #4A4A4A; text-align: left;">直播描述</ion-col>
+        <ion-col col-9 style="color: #9B9B9B; text-align: right;">你可以对直播进行详细的描述</ion-col>
+      </ion-row>
+      <ion-row no-padding style="height: 141px; font-size: 16px;">
+        <ion-col col-12 no-padding style="background:white; border: 1px, solid, #9B9B9B; border-radius: 5px; padding-left: 8px;">
+          <ion-textarea [(ngModel)]="task.taskDescription" rows="6" style="height: 141px;"> </ion-textarea>
+        </ion-col>
+      </ion-row>
+      <ion-row center style="height: 44px; font-size: 14px;">
+        <ion-col col-12 style="color: #4A4A4A; text-align: left;">直播地点</ion-col>
+      </ion-row>
+      <ion-row no-padding style="height: 44px; font-size: 16px;">
+        <ion-col col-12 no-padding style="background:white; border: 1px, solid, #9B9B9B; border-radius: 5px; padding-left: 8px;">
+          <ion-textarea id="position" [(ngModel)]="task.taskPosition" rows="1" style="height: 44px;"> </ion-textarea>
+        </ion-col>
+      </ion-row>
+      <ion-row center style="height: 44px; font-size: 14px;">
+        <ion-col col-12 style="color: #4A4A4A; text-align: left;">直播时间</ion-col>
+      </ion-row>
+      <ion-row center style="height: 44px;">
+        <ion-col col-4 style="color: #9B9B9B; text-align: center; font-size: 14px;">开始时间</ion-col>
+        <ion-col col-8 style="color: #4A4A4A; text-align: center; font-size: 18px;">
+          <ion-datetime no-padding doneText="确认" cancelText="取消" displayFormat="YYYY-MM-DDTHH:mm" [min]="minStartTime" max="2020-12-31T23:59" [(ngModel)]="task.taskStartTime" (ionChange)="updateEndTime()"></ion-datetime>
+        </ion-col>
+      </ion-row>
+      <ion-row center style="height: 44px;">
+        <ion-col col-4 style="color: #9B9B9B; text-align: center; font-size: 14px;">结束时间</ion-col>
+        <ion-col col-8 style="color: #4A4A4A; text-align: center; font-size: 18px;">
+          <ion-datetime no-padding doneText="确认" cancelText="取消" displayFormat="YYYY-MM-DDTHH:mm" [min]="minEndTime" max="2020-12-31T23:59" [(ngModel)]="task.taskEndTime"></ion-datetime>
+        </ion-col>
+      </ion-row>
+      <ion-row center style="height: 44px; font-size: 14px;">
+        <ion-col col-12 style="color: #4A4A4A; text-align: left;">上传封面</ion-col>
+      </ion-row>
+      <ion-row no-padding style="height: 117px; font-size: 16px;">
+        <ion-col col-12 no-padding style="background:white; border: 1px, solid, #9B9B9B; border-radius: 5px; padding-left: 8px; text-align: center;">
+          <img style="margin-top: 40px;" src="assets/imgs/add-black.svg" (click)="changeImage()">
+        </ion-col>
+      </ion-row>
+      <ion-row class="no-padding" center style="height: 89px;">
+        <ion-col width-100 class="no-padding">
+          <div style="height: 45px; background-color: #F5F5F5;"></div>
+          <button ion-button block mode="ios" color="goBoRed" style="font-size: 18px; height: 44px;" (click)="addTrailer()">确认发布</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div style="height: 45px; background-color: #F5F5F5;"></div>
+    
+</ion-content>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>报酬</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="任务列表页面1-发布者视角" transform="translate(-125.000000, -302.000000)" stroke="#979797" fill="#FFFFFF">
+            <g id="报酬" transform="translate(126.000000, 303.000000)">
+                <path d="M10,18.2608696 C13.7873495,18.2608696 17.082943,17.3502711 18.7801678,16.0076778 C19.5578964,15.3924538 20,14.6865197 20,13.9359268 C20,11.5473268 15.5228475,9.61098398 10,9.61098398 C4.4771525,9.61098398 0,11.5473268 0,13.9359268 C0,14.7941496 0.577983138,15.5939878 1.57478406,16.2666032 C3.35227271,17.4660064 6.46150897,18.2608696 10,18.2608696 Z" id="Oval-4"></path>
+                <ellipse id="Oval-4" cx="10" cy="9.13043478" rx="10" ry="4.32494279"></ellipse>
+                <ellipse id="Oval-4" cx="10" cy="4.32494279" rx="10" ry="4.32494279"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

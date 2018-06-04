@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Broad</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="底部状态栏" transform="translate(-160.000000, 1.000000)">
+            <g id="状态栏">
+                <g id="Broad" transform="translate(161.000000, 0.000000)">
+                    <path d="M26,52 C40.3594035,52 52,40.3594035 52,26 C52,11.6405965 40.3594035,0 26,0 C11.6405965,0 0,11.6405965 0,26 C0,40.3594035 11.6405965,52 26,52 Z" id="Oval" stroke="#ED4A4A" fill="#F97C7C"></path>
+                    <path d="M26.25,37.0922895 C32.4632034,37.0922895 37.5,32.1467621 37.5,26.0461448 C37.5,19.9455275 32.4632034,15 26.25,15 C20.0367966,15 15,19.9455275 15,26.0461448 C15,32.1467621 20.0367966,37.0922895 26.25,37.0922895 Z" id="Oval" fill="#FB9797"></path>
+                    <path d="M26,31 C28.7614237,31 31,28.7614237 31,26 C31,23.2385763 28.7614237,21 26,21 C23.2385763,21 21,23.2385763 21,26 C21,28.7614237 23.2385763,31 26,31 Z" id="Oval" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

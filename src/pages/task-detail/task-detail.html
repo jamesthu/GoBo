@@ -1,0 +1,77 @@
+<!--
+  Generated template for the WaitingDetailPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="goBoRed">
+        <ion-title style="font-size: 20px; text-align: center">任务详情</ion-title>
+      <ion-buttons end>
+        <button ion-button color="goBoRed">
+          <img class="pic-button-email" src="assets/imgs/email.svg">
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content style="background-color: #f5f5f5;">
+    <ion-grid no-padding style="width: 100%; height: 100%;">
+      <ion-row class="no-padding" style="background-color:#fff; width: 100%; height: 10px;"></ion-row>
+      <ion-row center no-padding style="background-color:#fff; width: 100%; height: 30px;">
+        <ion-col col-2 style="padding-left: 25px;">
+            <img  style="border-radius: 30px;" src="assets/imgs/avatar.svg">
+        </ion-col>
+        <ion-col col-4 style="font-size:14px; color: #4A4A4A; padding-left:10px; padding-top: 5px;">
+          {{task.taskInitiator.name}}
+        </ion-col>
+        <ion-col col-5 style="font-size:14px; color: #F97C7C; text-align:right; padding-top: 5px;">
+            任务距离失效 {{task.taskLeftTime.displayTime}}
+        </ion-col>
+        <ion-col col-1></ion-col>
+      </ion-row>
+      <ion-row class="no-padding" style="background-color:#fff; width: 100%; height: 71px;">
+        <ion-col col-1></ion-col>
+        <ion-col col-10 style="font-size:16px; color: #4A4A4A;">
+          {{task.taskDescription}}
+        </ion-col>
+        <ion-col col-1></ion-col>
+      </ion-row>
+      <div style="height: 1px; background-color: #f5f5f5;"></div>
+      <ion-row center no-padding style="background-color:#fff; width: 100%; height: 37px;">
+        <ion-col col-2 style="padding-left: 25px; padding-top: 8px;">
+          <img src="assets/imgs/detail_clock.svg">
+        </ion-col>
+        <ion-col col-10 style="font-size:15px; color: #4A4A4A; padding-top: 7px;">
+          {{task.taskStartTime}}至{{task.taskEndTime}}
+        </ion-col>
+      </ion-row>
+      <div style="height: 1px; background-color: #f5f5f5;"></div>
+      <ion-row center no-padding style="background-color:#fff; width: 100%; height: 37px;">
+        <ion-col col-2 style="padding-left: 25px; padding-top: 8px;">
+          <img src="assets/imgs/detail_position.svg">
+        </ion-col>
+        <ion-col col-10 style="font-size:15px; color: #4A4A4A; padding-top: 7px;">
+          {{task.taskPosition}}
+        </ion-col>
+      </ion-row>
+      <div style="height: 1px; background-color: #f5f5f5;"></div>
+      <ion-row center no-padding style="background-color:#fff; width: 100%; height: 37px;">
+        <ion-col col-2 style="padding-left: 25px; padding-top: 8px;">
+          <img src="assets/imgs/money.svg">
+        </ion-col>
+        <ion-col col-10 style="font-size:15px; color: #4A4A4A; padding-top: 7px;">
+          {{task.taskReward}}
+        </ion-col>
+      </ion-row>
+      <div style="height: 10px; background-color: #f5f5f5;"></div>
+      <ion-row padding>
+        <ion-col no-padding>
+          <button *ngIf="task.taskSelfInit" block ion-button color="goBoRed" mode="ios" style="font-size: 18px; height: 44px; color:white;" (click)="deleteTask()">删除任务</button>
+          <button *ngIf="!task.taskSelfInit" block ion-button color="goBoRed" mode="ios" style="font-size: 18px; height: 44px; color:white;" (click)="claimTask()">领取任务</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  

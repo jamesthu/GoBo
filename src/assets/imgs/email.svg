@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>News</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,1.99406028 C0,0.892771196 0.889673948,0 1.991155,0 L20.008845,0 C21.1085295,0 22,0.894513756 22,1.99406028 L22,14.0059397 C22,15.1072288 21.1054612,16 20.004997,16 L13.4909124,16 L1.99063058,16 C0.891235669,16 0,15.1054862 0,14.0059397 L0,1.99406028 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="任务页顶栏" transform="translate(-333.000000, -34.000000)">
+            <g transform="translate(0.000000, 20.000000)" id="News">
+                <g transform="translate(333.000000, 14.000000)">
+                    <g>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <path stroke="#FFFFFF" d="M0.5,1.99406028 L0.5,14.0059397 C0.5,14.8302056 1.16823903,15.5 1.99063058,15.5 L20.004997,15.5 C20.8298885,15.5 21.5,14.830517 21.5,14.0059397 L21.5,1.99406028 C21.5,1.16982383 20.8315556,0.5 20.008845,0.5 L1.991155,0.5 C1.16667003,0.5 0.5,1.16805911 0.5,1.99406028 Z"></path>
+                        <path d="M0.320770077,8.90727594 L21.6792299,8.90727594 L12.2034844,0.915536882 C11.5464423,0.361394787 10.4533374,0.361580629 9.79651557,0.915536882 L0.320770077,8.90727594 Z" id="Triangle-3" stroke="#FFFFFF" mask="url(#mask-2)" transform="translate(11.000000, 4.703638) scale(1, -1) translate(-11.000000, -4.703638) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

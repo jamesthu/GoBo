@@ -1,0 +1,36 @@
+<!--
+  Generated template for the HistoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="goBoRed">
+    <ion-title style="font-size: 20px; text-align: center;">历史记录</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="fiter($event)" style="font-size: 16px;">筛选</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content style="background: #F5F5F5;">
+    <ion-grid no-padding>
+      <div style="height: 8px;"></div>
+      <div *ngFor="let historyRecord of historyRecords">
+        <ion-row center style="height: 64px; background-color: #FFFFFF;">
+          <ion-col col-3 text-center style="padding-top: 15px;">
+            <div *ngIf="historyRecord.type == 1" style="color: #9B9B9B; font-size: 10px;">收益</div>
+            <div *ngIf="historyRecord.type == -1" style="color: #9B9B9B; font-size: 10px;">支出</div>
+            <div style="color: #9B9B9B; font-size: 10px;">{{historyRecord.time}}</div>
+          </ion-col>
+          <ion-col col-9 style="padding-left: 15px; padding-top: 10px;">
+            <div style="color: #000000; font-size: 16px;">{{historyRecord.modifyNumber}}</div>
+            <div style="height: 5px;"></div>
+            <div style="color: #000000; font-size: 12px;">{{historyRecord.taskName}}</div>
+          </ion-col>
+        </ion-row>
+        <div style="height: 1px; background-color: #F5F5F5;"></div>
+      </div>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="124px" viewBox="0 0 132 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Poster" transform="translate(-541.000000, -9385.000000)">
+            <g id="界面流程编组" transform="translate(409.000000, 8749.000000)">
+                <g id="L10" transform="translate(12.000000, 416.000000)">
+                    <g id="Group" transform="translate(16.000000, 87.417250)">
+                        <g id="Logo" transform="translate(42.362667, 133.133433)">
+                            <path d="M148.318625,0 C160.043,0 167.648,7.58995502 167.648,19.2911357 L167.648,61.6683846 C167.648,73.3695652 160.043,80.9595202 148.318625,80.9595202 L105.857375,80.9595202 C94.133,80.9595202 86.528,73.3695652 86.528,61.6683846 L86.528,19.2911357 C86.528,7.58995502 94.133,5.82331761e-24 105.857375,5.82331761e-24" id="App-Icon-Shape-Copy" fill-opacity="0.76" fill="#FC5757"></path>
+                            <path d="M110.413333,51.7241379 C116.635742,51.7241379 121.68,46.6898585 121.68,40.4797601 C121.68,34.2696617 116.635742,29.2353823 110.413333,29.2353823 C104.190925,29.2353823 99.1466667,34.2696617 99.1466667,40.4797601 C99.1466667,46.6898585 104.190925,51.7241379 110.413333,51.7241379 Z" id="Oval" fill="#FFFFFF"></path>
+                            <ellipse id="Oval-2" fill="#F97C7C" cx="110.413333" cy="40.4797601" rx="3.60533333" ry="3.5982009"></ellipse>
+                            <ellipse id="Oval" fill="#FFFFFF" cx="143.762667" cy="40.4797601" rx="11.2666667" ry="11.2443778"></ellipse>
+                            <ellipse id="Oval-2" fill="#F97C7C" cx="143.762667" cy="40.4797601" rx="3.60533333" ry="3.5982009"></ellipse>
+                            <text id="GoBroad" font-family="Chalkduster" font-size="25" font-weight="normal" fill="#F97C7C">
+                                <tspan x="62.4005451" y="120.950525">GoBroad</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
